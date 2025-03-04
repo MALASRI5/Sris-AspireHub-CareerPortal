@@ -1,0 +1,68 @@
+<nav class="top-navbar">
+    <div class="logo">
+        <img src="logo.jpg" alt="logo">
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search..." class="input">
+        <i class="fa fa-search search-icon"></i>
+    </div>
+
+    <div class="icon">
+        <button type="button" class="btn btn-primary install-btn">
+            <i class="fa-solid fa-circle-arrow-down"></i> Install App
+        </button>
+        <a href="login"><button type="button" class="btn btn-primary install-btn">
+                <i class="fa-solid fa-user"></i> Login
+            </button></a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+    </div>
+</nav>
+
+<nav class="bottom-navbar">
+    <ul>
+        <li><a href="ejshome">HOME</a></li>
+        <li><a href="about">ABOUT US</a></li>
+        <li><a href="resource">RESOURCES</a></li>
+        <div class="dropdown">
+            <a class="btn btn-white dropdown-toggle" href="#">CAREER GUIDANCE</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="sslcGuidance">8-10 class</a></li>
+                <li><a class="dropdown-item" href="hscGuidance">11-12 class</a></li>
+            </ul>
+        </div>
+        <li><a href="contact">CONTACT US</a></li>
+    </ul>
+</nav>
+
+<nav class="mobile-navbar" id="mobileMenu">
+    <div class="close-btn" onclick="toggleMenu()">
+        <i class="fa fa-times"></i>
+    </div>
+    <ul>
+        <li><a href="ejshome">HOME</a></li>
+        <li><a href="about">ABOUT US</a></li>
+        <li><a href="resource">RESOURCES</a></li>
+
+        <div class="dropdown">
+            <a class="btn btn-white dropdown-toggle" href="#">CAREER GUIDANCE</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="sslcGuidance">8-10 class</a></li>
+                <li><a class="dropdown-item" href="hscGuidance">11-12 class</a></li>
+            </ul>
+        </div>
+        <li><a href="contact">CONTACT US</a></li>
+        <li class="mobile-login">
+            <a href="login"><i class="fa-solid fa-user"></i> Login</a>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("show");
+    }
+</script>

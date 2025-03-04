@@ -1,0 +1,241 @@
+body {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD";
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 11vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.search-container {
+    position: relative;
+    width: 300px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.search-container input:focus {
+    border-color: #75b0ef;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search-container .search-icon:hover {
+    color: #007bff;
+}
+
+.icon {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon .install-btn {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.bottom-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 11vh;
+    width: 100%;
+    height: 8vh;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+}
+
+.bottom-navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-navbar ul li {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bottom-navbar ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown:hover .dropdown-menu {
+    top: 20px;
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #007bff;
+}
+
+.dropdown a {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    display: inline-block;
+}
+
+.mobile-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.mobile-navbar.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile-navbar ul li {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mobile-navbar ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.mobile-navbar ul li a:hover {
+    color: #007bff;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 36px;
+    color: black;
+    cursor: pointer;
+}
+
+.mobile-login a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.mobile-login a:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        width: 170px;
+    }
+
+    .icon .install-btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .bottom-navbar {
+        display: none;
+    }
+}

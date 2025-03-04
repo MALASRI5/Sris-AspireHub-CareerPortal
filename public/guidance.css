@@ -1,0 +1,366 @@
+body {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua";
+    overflow-x: hidden;
+}
+
+.sslc-img-container {
+    background-image: url("./guidance-banner.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+}
+
+.sslc-banner-content {
+    align-items: center;
+    padding: 4rem;
+    padding-top: 6rem;
+    width: 100%;
+    color: black;
+    text-align: start;
+}
+
+.sslc-banner-content h1 {
+    margin-bottom: 2rem;
+    font-size: 36px;
+}
+
+.sslc-banner-content h3 {
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.ban-btn {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.ban-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .sslc-banner-content {
+        padding: 3rem 2rem;
+        padding-top: 4rem;
+    }
+
+    .sslc-banner-content h1 {
+        font-size: 28px;
+    }
+
+    .sslc-banner-content h3 {
+        font-size: 18px;
+    }
+
+    .ban-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ban-btn button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sslc-banner-content h1 {
+        font-size: 24px;
+    }
+
+    .sslc-banner-content h3 {
+        font-size: 16px;
+    }
+
+    .ban-btn {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ban-btn button {
+        width: 100%;
+        padding: 14px 5px;
+        font-size: 15px;
+    }
+
+    .sslc-img-container {
+        background-image: url("./guidance-banner.jpg");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+}
+
+.vertical-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+    width: 60vw;
+}
+
+.vertical-box-h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.vertical-box .para {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(120, 120, 120);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+    width: 90%;
+    max-width: 900px;
+    flex-wrap: wrap;
+}
+
+.container img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.container-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.container-text h3 {
+    font-size: 1.5rem;
+    text-align: start;
+    margin-left: 1rem;
+}
+
+.container-text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.Polytechnic {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .vertical-box {
+        width: 90%;
+    }
+
+    .vertical-box-h2 {
+        font-size: 1.8rem;
+    }
+
+    .vertical-box .para {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .container-text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .container-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .Polytechnic {
+        flex-direction: column;
+    }
+
+    .vertical-box .para {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .vertical-box-h2 {
+        font-size: 1.5rem;
+    }
+
+    .vertical-box .para {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .container-text {
+        text-align: start;
+    }
+}
+
+.Horizontal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    margin-top: 0;
+    width: 100vw;
+}
+
+.faq-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    margin-top: 0;
+    width: 60vw;
+}
+
+.Horizontal-box p {
+    padding-bottom: 1rem;
+}
+
+.horizontal-container {
+    width: 300px;
+    height: 530px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.horizontal-container-text {
+    padding: 1rem;
+    text-align: start;
+}
+
+.horizontal-img-container {
+    height: 200px;
+    width: 100%;
+}
+
+.horizontal-img-container img {
+    height: 200px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.horizontal-flex {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.faq-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.faq-question {
+    background: #f4f4f4;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background: #fff;
+    text-align: start;
+}
+
+@media (max-width: 768px) {
+    .Horizontal-box,
+    .faq-box {
+        width: 90vw;
+    }
+
+    .horizontal-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .horizontal-img-container img {
+        height: auto;
+    }
+
+    .horizontal-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .faq-question {
+        padding: 15px 10px;
+    }
+
+    .faq-answer {
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .horizontal-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .horizontal-img-container img {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        padding-top: 10px;
+    }
+
+    .faq-item {
+        width: 100%;
+    }
+}

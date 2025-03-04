@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-image: url("./ban2.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    color: black;
+    padding: 4rem;
+    text-align: start; 
+    width: 80%; 
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 2rem;
+}
+
+.banner h4 {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px; 
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 350px; 
+    }
+
+    .banner-text {
+        padding: 3rem;
+        width: 85%;
+    }
+
+    .banner h1 {
+        font-size: 28px; 
+        margin-bottom: 1rem;
+    }
+
+    .banner h4 {
+        font-size: 16px; 
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        padding: 8px 16px; 
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 300px; 
+    }
+
+    .banner-text {
+        padding: 2rem;
+        width: 90%;
+    }
+
+    .banner h1 {
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+
+    .banner h4 {
+        font-size: 14px; 
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        padding: 6px 12px; 
+        font-size: 12px;
+    }
+}
+
+.vdo-con {
+    padding: 30px;
+}
+
+.vdo-con h1 {
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.video-content {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; 
+}
+
+.video-content:hover {
+    box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.2), -10px -8px 8px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+
+.video-content iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+.video-content p {
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        gap: 20px; 
+    }
+
+    .video-content {
+        max-width: 100%; 
+    }
+
+    .video-content iframe {
+        height: 180px; 
+    }
+
+    .video-content p {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .video-content iframe {
+        height: 160px; 
+    }
+
+    .video-content p {
+        font-size: 14px; 
+    }
+}
+
+.blog-con {
+    padding: 30px;
+}
+
+.blog-con h1 {
+    text-align: center;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap; 
+}
+
+.blog-content {
+    padding: 30px;
+    width: 500px;
+    height: 550px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s;
+    margin-bottom: 20px; 
+}
+
+.blog-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-content h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    padding: 0;
+}
+
+.blog-content p {
+    color: #666;
+    font-size: 15px;
+}
+
+.blog-content .readmore {
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    justify-content: start;
+    margin: 0 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.blog-content .readmore:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        gap: 20px; 
+    }
+
+    .blog-content {
+        width: 100%; 
+        height: auto; 
+        margin: 0 20px; 
+    }
+
+    .blog-content h2 {
+        font-size: 18px; 
+    }
+
+    .blog-content p {
+        font-size: 14px; 
+    }
+
+    .blog-content .readmore {
+        margin: 10px 0; 
+        width: 100%; 
+        padding: 10px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-content h2 {
+        font-size: 16px;
+    }
+
+
+    .blog-content p {
+        font-size: 13px; 
+    }
+
+    .blog-content .readmore {
+        padding: 12px 0;
+    }
+}

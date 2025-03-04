@@ -1,0 +1,174 @@
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", serif;
+}
+
+
+.footer-box {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.available-modes {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.available-modes h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.available-modes p {
+    text-align: center;
+}
+
+footer {
+    padding-top: 2rem;
+    background: #333;
+    color: #fff;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+.footer-container h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-container p {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footer-container p:hover {
+    opacity: 1;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social i {
+    font-size: 1.4rem;
+    margin-right: 0.4rem;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+
+.social i:hover {
+    opacity: 1;
+}
+
+.payment-methods {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.payment-methods h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.payment-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.payment-logos img {
+    height: 50px;
+    width: 110px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.payment-logos img:hover {
+    transform: scale(1.05);
+}
+
+
+.copy {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+    .footer-box {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-container {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-box {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-container {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .social.icons {
+        text-align: center;
+    }
+
+    .payment-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .payment-logos img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-box {
+        padding: 20px 10px;
+    }
+
+    .footer-container h4 {
+        font-size: 16px;
+    }
+
+    .footer-container p {
+        font-size: 14px;
+    }
+
+    .social.icons i {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .payment-logos img {
+        width: 90px;
+        height: auto;
+    }
+
+    .copy {
+        font-size: 12px;
+    }
+}
